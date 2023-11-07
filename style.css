@@ -1,0 +1,204 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main
+{
+    justify-content: center;
+    display: grid;
+    grid-template-columns:60px 180px ;
+    gap: 18px;
+    margin-top: 2%;
+}
+.text
+{
+    justify-content: center;
+    text-align: center;
+    margin-top: 6%;
+}
+button
+{
+    margin-top: 10px;
+}
+.cel,.fer
+{
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin-left:0px;
+}
+
+.fahrenheit
+{
+    border: black 1px solid;
+    height: 100%;
+    width: 90%;
+}
+
+#celsius
+{
+    height: 100%;
+    width: 90%;
+    outline: none;
+    border: black 1px solid;
+}
+
+.fer,.cel{
+    cursor: pointer;
+}  
+
+
+
+ @media screen and (max-width: 1281px){
+    h1 
+    {
+        font-size: 40px;
+    }
+    .fahrenheit
+    {
+        font-size: 15px;
+        padding-top: 10px;
+        height: 150%;
+        width: 100%;
+        padding-left:2px ;
+        border-radius: 5px;
+ 
+    }
+
+    #celsius
+    {
+        font-size: 15px;
+        padding-left:2px ;
+        height: 200%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .main
+    {
+        gap: 35px;
+        margin-top: 2%;
+    }
+    button
+    {
+        margin-top: 30px;
+    }
+    .cel,.fer
+    {
+        font-size: 16px;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+    }
+    .fer
+    {
+        margin-left:70px;
+    }  
+    .cel
+    {
+        margin-left: 23px;
+    }
+    .fer:hover
+    {
+        width: 125px;
+        height: 42px;
+    }
+    .cel:hover
+    {
+        width: 125px;
+        height: 42px;
+    }
+    span 
+    {
+        
+        font-size: 20px;
+    }
+    #mode
+    {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 90px;
+        gap: 0px;
+    }
+    .mode2
+    {
+        color: transparent;
+    }
+} 
+
+/* @media screen and (max-width: 767px)
+{
+    .text{
+        margin-top: 80%;
+    }
+    .main
+    {
+        margin-top: 10%;
+    }
+} */
+
+
+@media screen and (max-width: 470px)
+{
+    .text{
+        margin-top: 40%;
+    }
+    h1 
+    {
+        
+        font-size: 35px;
+    }
+    .main
+    {
+        gap: 35px;
+        margin-top: 10%;
+    }
+    .fer
+    {
+        margin-left:60px;
+    }  
+    .cel
+    {
+        margin-left: 12px;
+    }
+    button
+    {
+        margin-top: 20px;
+    }
+    span 
+    {   
+        margin-left: -20px;
+        font-size: 20px;
+    }
+    .fahrenheit
+    {
+        margin-left: -30px;
+        border-radius: 5px;
+    }
+
+    #celsius
+    {
+        margin-left: -30px;
+        border-radius: 5px;
+    }
+    #mode
+    {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 40px;
+        gap: 0px;
+    }
+    .mode2
+    {
+        color: transparent;
+    }
+}
+
+
