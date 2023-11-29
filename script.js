@@ -35,30 +35,38 @@ dfer.addEventListener('click',function(){
 });
 
 
- mode.addEventListener('click',function(){
-    mode2.style.color = 'white';
-    h1s.style.color = 'white'
-    celinput.style.border = 'white 1px solid';
-    celinput.style.backgroundColor = 'black';
-    far.style.border = 'white 1px solid';
-    body.style.backgroundColor = 'black';
-    far.style.color = 'white';
-    celinput.style.color = 'white';
-    inspan.style.color = 'white';
-    outspan.style.color = 'white'
- })
- mode2.addEventListener('click',function(){
-    mode.style.color = 'black';
-    h1s.style.color = 'black'
-    celinput.style.border = 'black 1px solid';
-    celinput.style.backgroundColor = 'white';
-    far.style.border = 'black 1px solid';
-    body.style.backgroundColor = 'white';
-    far.style.color = 'black';
-    celinput.style.color = 'black';
-    inspan.style.color = 'black';
-    outspan.style.color = 'black'
- })
+mode.addEventListener('click',function(){
+    if(document.querySelector('.mode').classList.contains("fa-sun"))
+    {
+        body.style.backgroundColor = 'white'
+        document.querySelector('.mode').classList.remove("fa-sun");
+        document.querySelector('.mode').classList.add("fa-moon");
+        mode.style.color = "black";
+        h1s.style.color ="black"
 
+        inspan.style.color ="black"
+        celinput.style.border ="1px solid black"
+        celinput.style.backgroundColor="white"
+        celinput.style.color="black"
+        outspan.style.color ="black"
+        far.style.border ="1px solid black"
+        far.style.backgroundColor="white"
+        far.style.color = "black"
         
-   
+    }
+    else{
+        body.style.backgroundColor = 'black'
+        document.querySelector('.mode').classList.remove("fa-moon");
+        document.querySelector('.mode').classList.add("fa-sun");
+        mode.style.color = "white"
+        h1s.style.color ="white"
+        inspan.style.color ="white"
+        celinput.style.border ="1px solid white"
+        celinput.style.backgroundColor="black"
+        celinput.style.color="white"
+        outspan.style.color ="white"
+        far.style.border ="1px solid white"
+        far.style.backgroundColor="black"
+        far.style.color = "white"
+    }
+})
